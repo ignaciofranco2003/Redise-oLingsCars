@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    background-color: #706D6D;
+}
+
+.slogan{
+    position: relative;
+    padding: 10px;
+    margin-top: 80px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.categorias {
+    display: none;
+    position: fixed;
+    top: 80px;
+    bottom: 60px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #91e842;
+    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 90%;
+}
+
+.categorias.show {
+    display: block;
+}
+
+.categorias a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.categorias a:hover {
+    background-color: rgb(71, 71, 71, 50%);
+}
+
+/* HEADER Y CATEGORIAS */
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #91e842;
+    height: 80px;
+}
+
+.lingscars{
+    height: 75px;
+    align-self: center;
+    margin-left: 480px;
+}
+
+.menu-desplegable{
+    top: 35px;
+    bottom: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.help{
+    color: #000;
+    size: 50px;
+    top: 35px;
+    bottom: 35px;
+    margin-right: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-desplegable, .help {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-size: 50px;
+    background-position: center;
+}
+
+.menu-desplegable:hover, .help:hover {
+    border-color: rgba(92, 92, 92, 0.50);
+    background-color: rgba(97, 92, 92, 0.5);
+}
+
+.categorias{
+    display: none;
+}
+/* HEADER Y CATEGORIAS */
+
+
+/* BOTONES */
+
+.boton-izq-marcas, .boton-der-marcas, .boton-izq-autos, .boton-der-autos{
+    position: absolute;
+    border: 1px solid #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boton-izq-marcas, .boton-izq-autos  {
+    left: 15px;
+}
+
+.boton-der-marcas, .boton-der-autos  {
+    right: 15px;
+}
+
+/* BOTONES */
+
+
+/* MARCAS */
+.contenedor-marcas{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #91E842;
+    height: 150px;
+}
+
+.marcas-contenedor {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0 40px;
+    flex: 1;
+}
+
+.marcas {
+    display: flex;
+    gap: 22px;
+    flex: 1;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.marca {
+    width: 100px;
+    height: 100px;
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5%;
+}
+.marca:hover {
+    border-color: rgba(92, 92, 92, 0.50);
+    background-color: rgba(97, 92, 92, 0.5);
+}
+
+
+.audi {
+    background-image: url('Imagenes/MARCAS/Audi-logo.png');
+}
+
+.bmw{
+    background-image: url('Imagenes/MARCAS/bmw-logo.png');
+
+}
+
+.chevrolet {
+    background-image: url('Imagenes/MARCAS/Chevrolet-Logo.png');
+}
+
+.dodge {
+    background-image: url('Imagenes/MARCAS/dodge-logo-.png');
+}
+/* MARCAS */
+
+/* AUTOS */
+.contenedor-autos{
+    margin-top: 35px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #91E842;
+}
+
+.autos-contenedor {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0 40px;
+    flex: 1;
+}
+
+.autos {
+    display: flex;
+    gap: 22px;
+    flex: 1;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.auto {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.auto:hover {
+    border-color: rgba(92, 92, 92, 0.50);
+    background-color: rgba(97, 92, 92, 0.5);
+}
+
+.image-container {
+    width: 150px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.auto1 .image-container { background-image: url('Imagenes/AUTOS/1.png'); }
+.auto2 .image-container { background-image: url('Imagenes/AUTOS/2.png'); }
+.auto3 .image-container { background-image: url('Imagenes/AUTOS/QUE.png'); }
+
+.auto p {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* AUTOS */
+
+
+/* FOOTER Y REDES */
+footer {
+    background-color: #91e842;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.contact-us {
+    text-align: center;
+    padding: 15px 0px 0px;
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0 0;
+}
+
+.redes a {
+    display: flexbox;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.telefono{
+    padding: 0 0 8px;
+}
+
+.twitter {
+    height: 25px;
+    width: 25px;
+    background-image: url('Imagenes/REDES/TWITTER.png');
+}
+
+.facebook {
+    height: 30px;
+    width: 25px;
+    background-image: url('Imagenes/REDES/FACEBOOK.png');
+}
+
+.email {
+    height: 30px;
+    width: 25px;
+    background-image: url('Imagenes/REDES/EMAIL.png');
+}
+/* FOOTER Y REDES */
